@@ -225,8 +225,8 @@
                     <div class="col-lg-12">
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                <div class="page-header" id="top">
-                                    <h2 class="pageheader-title">User Create </h2>
+                                <div class="page-header" id="topHeader">
+                                    <h2 class="pageheader-title">Project Create </h2>
                                 </div>
                             </div>
                         </div>
@@ -240,84 +240,40 @@
                         <!-- Form  -->
 
                         <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
 
                                 <form>
 
                                     <div class="row">
                                         <div class="form-group col-6">
-                                            <label for="firstname" class="col-form-label">First Name</label>
-                                            <input id="firstname" type="text" class="form-control"
-                                                   placeholder="first name">
+                                            <label for="projectname" class="col-form-label">Project Name</label>
+                                            <input id="projectname" type="text" class="form-control"
+                                                   placeholder="project name">
                                         </div>
 
-                                        <div class="form-group col-6">
-                                            <label for="lastname" class="col-form-label">Last Name</label>
-                                            <input id="lastname" type="text" class="form-control"
-                                                   placeholder="last name">
-                                        </div>
                                     </div>
 
 
                                     <div class="row">
                                         <div class="form-group col-6">
-                                            <label for="email" class="col-form-label">Email Address</label>
-                                            <input id="email" type="text" class="form-control"
-                                                   placeholder="email address">
-                                        </div>
-
-                                        <div class="form-group col-6">
-                                            <label for="phonenumber" class="col-form-label">Phone Number</label>
-                                            <input id="phonenumber" type="text" class="form-control"
-                                                   placeholder="phone number">
+                                            <label for="projectcode" class="col-form-label">Project Code</label>
+                                            <input id="projectcode" type="text" class="form-control"
+                                                   placeholder="project code">
                                         </div>
                                     </div>
 
-
+                                    <label>Assigned Manager</label>
+                                    <br>
                                     <div class="row">
-                                        <div class="form-group col-6">
-                                            <label for="password" class="col-form-label">Password</label>
-                                            <input id="password" type="password" class="form-control"
-                                                   placeholder="password">
-                                        </div>
 
                                         <div class="form-group col-6">
-                                            <label for="confirmpassword" class="col-form-label">Password</label>
-                                            <input id="confirmpassword" type="password" class="form-control"
-                                                   placeholder="confirm password">
-                                        </div>
-                                    </div>
-
-
-                                    <div class="row">
-                                        <div class="form-group col-6">
-                                            <label>Gender</label>
-
-                                            <br>
-                                            <label class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" name="radio-inline" checked=""
-                                                       class="custom-control-input"><span
-                                                    class="custom-control-label">Male</span>
-                                            </label>
-
-                                            <label class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" name="radio-inline" checked=""
-                                                       class="custom-control-input"><span
-                                                    class="custom-control-label">Female</span>
-                                            </label>
-                                        </div>
-
-                                        <div class="form-group col-6">
-
-                                            <label>Choose a Role</label>
 
                                             <select name="roleId" id="roleDropDown" class="custom-select"
                                                     required="required">
                                                 <option value="none">Select</option>
-                                                <option value="admin">Admin</option>
-                                                <option value="manager">Manager</option>
-                                                <option value="employee">Employee</option>
+                                                <option value="admin">Delisse Nore</option>
+                                                <option value="manager">Mike Smith</option>
                                             </select>
 
                                         </div>
@@ -325,137 +281,151 @@
 
 
                                     <div class="row">
-                                        <div class="form-group col-12">
-                                            <button class="btn btn-success float-right" type="submit">Save</button>
+                                        <div class="form-group col-3">
+                                            <label>Project Start Date</label>
+                                            <br>
+                                            <input type="date" class="form-control">
                                         </div>
+
+                                        <div class="form-group col-3">
+                                            <label>Project End Date</label>
+                                            <br>
+                                            <input type="date" class="form-control">
+                                        </div>
+
                                     </div>
 
+                                    <div class="form-group col-6">
+                                        <button class="btn btn-success float-right" type="submit">Save</button>
+                                    </div>
 
                                 </form>
 
-
                             </div>
 
-
                         </div>
+
+
                     </div>
 
-                    <!-- end Form  -->
-                    <!-- Table  -->
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-
-                        <div class="page-header" id="top">
-                            <h2 class="pageheader-title">User List </h2>
-                        </div>
-
-                        <div class="card">
-                            <div class="card-body">
-                                <table class="table table-striped">
-                                    <thead>
-                                    <tr>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Email(username)</th>
-                                        <th scope="col">Gender</th>
-                                        <th scope="col">Phone</th>
-                                        <th scope="col">Role</th>
-                                        <th scope="col">Action</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>Craig Jark</td>
-                                        <td>craig@cydeo.com</td>
-                                        <td>Male</td>
-                                        <td>0123456123</td>
-                                        <td>Employee</td>
-                                        <td>
-                                            <a href="#">
-                                                <button class="btn btn-warning btn-sm">Update</button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="btn btn-danger btn-sm">Delete</button>
-                                            </a>
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>Delisse Nore</td>
-                                        <td>delissa@cydeo.com</td>
-                                        <td>Female</td>
-                                        <td>0123456123</td>
-                                        <td>Manager</td>
-                                        <td>
-                                            <a href="#">
-                                                <button class="btn btn-warning btn-sm">Update</button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="btn btn-danger btn-sm">Delete</button>
-                                            </a>
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>John Kessy</td>
-                                        <td>admin@cydeo.com</td>
-                                        <td>Male</td>
-                                        <td>0123456123</td>
-                                        <td>Admin</td>
-                                        <td>
-                                            <a href="#">
-                                                <button class="btn btn-warning btn-sm">Update</button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="btn btn-danger btn-sm">Delete</button>
-                                            </a>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Mike Smith</td>
-                                        <td>mikesmith@cydeo.com</td>
-                                        <td>Male</td>
-                                        <td>0123456123</td>
-                                        <td>Manager</td>
-                                        <td>
-                                            <a href="#">
-                                                <button class="btn btn-warning btn-sm">Update</button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="btn btn-danger btn-sm">Delete</button>
-                                            </a>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Shaun Hayns</td>
-                                        <td>shaun@cydeo.com</td>
-                                        <td>Male</td>
-                                        <td>0123456123</td>
-                                        <td>Employee</td>
-                                        <td>
-                                            <a href="#">
-                                                <button class="btn btn-warning btn-sm">Update</button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="btn btn-danger btn-sm">Delete</button>
-                                            </a>
-                                        </td>
-                                    </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- End Table -->
                 </div>
+
+                <!-- end Form  -->
+                <!-- Table  -->
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                    <div class="page-header" id="top">
+                        <h2 class="pageheader-title">Project List </h2>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Project Code</th>
+                                    <th scope="col">Project Name</th>
+                                    <th scope="col">Gender</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">Role</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Craig Jark</td>
+                                    <td>craig@cydeo.com</td>
+                                    <td>Male</td>
+                                    <td>0123456123</td>
+                                    <td>Employee</td>
+                                    <td>
+                                        <a href="#">
+                                            <button class="btn btn-warning btn-sm">Update</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                        </a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>Delisse Nore</td>
+                                    <td>delissa@cydeo.com</td>
+                                    <td>Female</td>
+                                    <td>0123456123</td>
+                                    <td>Manager</td>
+                                    <td>
+                                        <a href="#">
+                                            <button class="btn btn-warning btn-sm">Update</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                        </a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>John Kessy</td>
+                                    <td>admin@cydeo.com</td>
+                                    <td>Male</td>
+                                    <td>0123456123</td>
+                                    <td>Admin</td>
+                                    <td>
+                                        <a href="#">
+                                            <button class="btn btn-warning btn-sm">Update</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Mike Smith</td>
+                                    <td>mikesmith@cydeo.com</td>
+                                    <td>Male</td>
+                                    <td>0123456123</td>
+                                    <td>Manager</td>
+                                    <td>
+                                        <a href="#">
+                                            <button class="btn btn-warning btn-sm">Update</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Shaun Hayns</td>
+                                    <td>shaun@cydeo.com</td>
+                                    <td>Male</td>
+                                    <td>0123456123</td>
+                                    <td>Employee</td>
+                                    <td>
+                                        <a href="#">
+                                            <button class="btn btn-warning btn-sm">Update</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End Table -->
             </div>
         </div>
     </div>
-    <!-- ============================================================== -->
+</div>
+<!-- ============================================================== -->
 
-    <!-- ============================================================== -->
+<!-- ============================================================== -->
 </div>
 <!-- ============================================================== -->
 <!-- end wrapper  -->
